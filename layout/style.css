@@ -1,0 +1,20 @@
+body{
+	background-color: #457812;
+	margin: 0;
+	padding: 0;
+}
+#header{
+	height: 100px;
+	width: 100%;
+	background-color: #000;
+}
+#content{
+	height: 600px;
+	width: 100%;
+	background-color: #BAC125;
+}
+#footer{
+	height: 250px;
+	width: 100%;
+	background-color: #000;
+}
