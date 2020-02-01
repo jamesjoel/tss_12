@@ -1,0 +1,18 @@
+.bg-secondary-1{
+	background-color: #9aa8b7;
+}
+.nav-color{
+	background-color: #0189CA !important;
+}
+.nav-color ul li a{
+	color: #FFF !important;
+}
+.nav-color .dropdown .dropdown-item{
+	color: #000 !important;
+}
+
+
+
+.social .nav-item .nav-link{
+	color: #343a40 !important;
+}
