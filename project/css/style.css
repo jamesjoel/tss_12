@@ -16,3 +16,9 @@
 .social .nav-item .nav-link{
 	color: #343a40 !important;
 }
+.slider{
+	min-height: 300px;
+	background-image: url("../images/slider2.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
