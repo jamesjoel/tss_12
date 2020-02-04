@@ -22,3 +22,19 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
+.btn-blue{
+	background-color: #407AA3;
+	color: #FFF;
+	padding: 5px 30px;
+	border-radius: 40px;
+}
+.btn-blue:hover{
+	background-color: #05192F;
+	color: #FFF;
+}
+.saperator{
+	width: 200px;
+	height: 5px;
+	background-color: #05192F;
+	margin: 0 auto;
+}
