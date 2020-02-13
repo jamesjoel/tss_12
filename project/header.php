@@ -42,7 +42,7 @@
 
 
 <nav class="navbar nav-color navbar-expand-sm text-light sticky-top">
-	<a class="navbar-brand text-light" href="#">MyKart.com</a>
+	<a class="navbar-brand text-light" href="#">Flipkart.com</a>
 	<button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#menu">
 		<i class="fa fa-bars" aria-hidden="true"></i>
 	</button>
@@ -63,13 +63,13 @@
 
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="index.php">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">About</a>
+				<a class="nav-link" href="about.php">About</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
+				<a class="nav-link" href="contact.php">Contact</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Help</a>
@@ -82,10 +82,10 @@
 				<a href="#" class="nav-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i> MyCart <span class="badge badge-pill badge-light">2</span></a>
 			</li>
 			<li class="nav-item">
-		         <a class="nav-link" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+		         <a class="nav-link" href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 		    </li>
             <li class="nav-item">
-                <a class="nav-link" href="signup.html"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
+                <a class="nav-link" href="signup.php"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
             </li>
         </ul>
 		    
@@ -180,51 +180,4 @@
 		</div>
 	</div>
 </div>
-
 <div class="saperator"></div>
-
-<div class="container" style="min-height: 500px;">
-	<div class="row">
-		<div class="col-md-6 offset-md-3 my-4">
-			<div class="card my-4">
-				<div class="card-header">
-					<h4 class="mb-0">User Login</h4>
-					<small>For New User <a href="signup.html">Signup</a> Here</small>
-				</div>
-				<div class="card-body">
-					<div class="form-group">
-						<label>Username/Email</label>
-						<div class="input-group">
-							<div class="input-group-prepend">
-								<span class="input-group-text">@</span>
-							</div>
-							<input type="text" placeholder="Username/Email" class="form-control">
-						</div>
-					</div>
-					<div class="form-group">
-						<label>Password</label>
-						<div class="input-group">
-							<div class="input-group-prepend">
-								<span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
-							</div>
-							<input type="password" placeholder="Password" class="form-control">
-						</div>
-					</div>
-				</div>
-				<div class="card-footer">
-					<button type="submit" class="btn btn-blue">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container-fluid nav-color">
-	<div class="container">
-		<p class="text-light m-0 p-4 text-center">Copyright By the stepping stone</p>
-	</div>
-</div>
-
-
-</body>
-</html>
