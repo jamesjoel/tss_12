@@ -10,7 +10,7 @@ include("header.php")
 	<div class="row">
 		<div class="col-md-3 col-6 col-sm-6">
 			<div class="card my-3">
-				<img src="AdobeStock_295116528_Preview" class="card-img-top">
+				<img src="images/AdobeStock_288559400_Preview.jpeg" class="card-img-top">
 
 				<div class="card-body">
 					<small>(<del>$ 499.00</del>)</small>
@@ -24,7 +24,7 @@ include("header.php")
 
 		<div class="col-md-3 col-6 col-sm-6">
 			<div class="card my-3">
-				<img src="AdobeStock_297890625_Preview" class="card-img-top">
+				<img src="images/AdobeStock_297890625_Preview.jpeg" class="card-img-top">
 
 				<div class="card-body">
 					
