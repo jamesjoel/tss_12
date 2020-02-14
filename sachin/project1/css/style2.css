@@ -1,0 +1,28 @@
+h3 span{
+	color:red;
+}
+h3{
+	margin:0px;
+	padding: 0px;
+	color:#fff;
+	text-shadow: 2px 0px 0px; 
+}
+.slider{
+	background-image: url(../../images/12345612.jpg);
+	min-height:350px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+.put:hover{
+	background-color: blue;
+	color:#fff !important;
+}
+.hov:hover{
+	background-color: #fff;
+	color: #000  !important;
+}
+.card1{
+	min-height: 200px;
+	height: auto;
+}

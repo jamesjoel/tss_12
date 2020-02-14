@@ -1,0 +1,50 @@
+.but{
+	border-style: none;
+	background-color:orange;
+	margin: 2px;
+	padding: 5px;
+
+}
+.logo{
+	color: orange;
+}
+.rcolor{
+	background-color: #fff;
+	margin: 0 auto;
+
+}
+.link{
+	margin: 0 auto;
+	padding: 0px 50px;
+}
+ li a:hover{
+	
+	background-color: #FFA500;
+	color: #fff;
+}
+ h2 span{
+	color: #FFA500;
+
+
+}
+.slider{
+	min-height: 300px;
+	background-image: url("../../images/2.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+
+
+}
+.form{
+margin: 0 auto;
+padding: -10px;
+	border-style: none;
+}
+
+
+
+
+
+
+
