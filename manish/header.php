@@ -23,10 +23,10 @@
 			<li class="nav-item"><a href="#" class="nav-link ml-3 text-light "> About  </a></li>
 			<li class="nav-item"><a href="#" class="nav-link ml-3 text-light"> Contact </a></li>
 			<li class="nav-item">
-		         <a class="nav-link text-light" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+		         <a class="nav-link text-light" href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 		    </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="signup.html"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
+                <a class="nav-link text-light" href="signup.php"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
             </li>
 		
 		<li class="nav-item ml-0">
@@ -43,7 +43,7 @@
                     </div>
                     <h4 class="mt-0 ml-5 pl-5 pt-0"> MAN & WOMAN</h4>
 
-		<a href="shopknow.html">
+		<a href="shopknow.php">
 			<button class="btn btn-danger ml-5  mt-5 hhvv"> SHOP KNOW</button></a>
 
 
