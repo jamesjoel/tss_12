@@ -2,6 +2,7 @@
 <?php
 include("header.php");
 ?>
+
 <div class="jumbotron">
 	<h1 class="text-center">Contact Us</h1>
 </div>
