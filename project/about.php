@@ -1,6 +1,7 @@
 <?php
 include("header.php");
 ?>
+
 <div class="jumbotron">
 	<h1 class="text-center">About Us</h1>
 </div>

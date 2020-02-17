@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="project1\css\bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="tss_12\manish\css\style1.css"/>
+	<link rel="stylesheet" type="text/css" href="project1\css\style1.css"/>
 	<link rel="stylesheet" type="text/css" href="project1\css\font-awesome.css">
 	<script type="text/javascript" src="\js\jquery.js"></script>
 	<script type="text/javascript" src="\js\bootstrap.bundle.js"></script>
