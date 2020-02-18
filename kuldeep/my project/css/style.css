@@ -1,0 +1,23 @@
+.dangers{
+	background-color: #ffa31a;
+
+}
+nav{
+	background-color: #ccccff;
+}
+.slider{
+	min-height: 300px;
+	background-image: url("../image/slider.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.colder{
+	background-color:#ffa31a;
+	min-height: 50px;
+	width: 100%;
+}
+.box{
+	background-color: #ffa31a;
+	min-height: 30px;
+	width: 100%;
+}
