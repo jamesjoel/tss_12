@@ -79,15 +79,16 @@
 					<a href="#" class="dropdown-item text-dark">Electronics</a>
 					<a href="#" class="dropdown-item">Mobiles</a>
 				</div>
-
 		</li>
+
+		
 		<li class="nav-item">
 			<a href="fashion.php" class="nav-link text-dark font-weight-bold">Fashion</a>
 		</li>
 		<li class="nav-item">
 			<a href="#" class="nav-link text-dark font-weight-bold">Supermart</a>
 		</li>
-		<li class="nav-item">
+	<!--	<li class="nav-item">
 			<a href="#" class="nav-link text-dark font-weight-bold">Electronics</a>
 		</li>
 		<li class="nav-item">
@@ -98,7 +99,7 @@
 		</li>
 		<li class="nav-item">
 			<a href="#" class="nav-link text-dark font-weight-bold">Clothing</a>
-		</li>
+		</li>-->
 
 		<li class="nav-item">
 				<a class="nav-link text-dark font-weight-bold" href="index.php">Home</a>
