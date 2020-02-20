@@ -21,7 +21,7 @@
 				<a href="add_product.php" class="nav-link">Add Product</a>
 			</li>
 			<li cass="nav-item">
-				<a href="#" class="nav-link">View Product</a>
+				<a href="view_product.php" class="nav-link">View Product</a>
 			</li>
 			<li cass="nav-item">
 				<a href="add_category.php" class="nav-link">Add Category</a>
