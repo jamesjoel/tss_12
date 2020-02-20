@@ -1,5 +1,8 @@
 <?php
+include("db.php");
 include("header.php");
+$que = "SELECT * FROM category";
+$result = mysqli_query($con, $que);
 ?>
 
 <div class="container mt-4">
@@ -26,11 +29,13 @@ include("header.php");
 						<label>Category</label>
 						<select class="form-control" name="cate">
 							<option>Select</option>
-							<option>Electronics</option>
-							<option>Home Appliance</option>
-							<option>Mobiles</option>
-							<option>Fashion Men</option>
-							<option>Fashion Women</option>
+							<?php
+							while($data=mysqli_fetch_assoc($result))
+							{ ?>
+								<option><?php echo $data['name'];?></option>
+							<?php
+							}
+							?>
 						</select>
 					</div>
 
