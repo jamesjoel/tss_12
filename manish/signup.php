@@ -3,11 +3,10 @@ include("header.php")
 ?>
 <div class="saperator"></div>
 
-                           
-            </div></div>
             <div class="container" style="min-height: 500px;">
 	<div class="row">
 		<div class="col-md-6 offset-md-3 my-4">
+			<form action="data.php" method="post">
 			<div class="card my-4">
 				<div class="card-header bg-danger">
 					<h4 class="mb-0">User Registration</h4>
@@ -26,7 +25,7 @@ include("header.php")
 						<label>Username/Email</label>
 						<div class="input-group">
 							
-							<input type="text" name="email id" placeholder="Username/Email" class="form-control">
+							<input type="text" name="email" placeholder="Username/Email" class="form-control">
 						</div>
 					</div>
 					<div class="form-group">
@@ -40,7 +39,7 @@ include("header.php")
 						<label>Re-Password</label>
 						<div class="input-group">
 							
-							<input type="password" placeholder="Password" class="form-control">
+							<input type="password" name="re-pass"  placeholder="Password" class="form-control">
 						</div>
 					</div>
 					<div class="form-group">
@@ -49,8 +48,8 @@ include("header.php")
 					</div>
 					<div class="form-group">
 						<label>Gender</label>
-						<input type="radio" name="gender" value="gender" /> Male 
-						<input type="radio" name="gender" value="gender" /> Female
+						<input type="radio" name="gender" value="Male" /> Male 
+						<input type="radio" name="gender" value="Female" /> Female
 					</div>
 
 					<div class="form-group">
@@ -70,11 +69,12 @@ include("header.php")
 					</div>
 				</div>
 				<div class="card-footer bg-danger">
-					<button type="submit" class="btn btn-blue"><a href="data.php"></a>
+					<button type="submit" class="btn btn-blue">
 						Signup <i class="fa fa-user" aria-hidden="true"></i></button>
 				</div>
 			</div>
+		</form>
 		</div>
 	</div>
 </div>
-</form>
+

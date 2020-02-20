@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="project1\css\bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="project1\css\style1.css"/>
-	<link rel="stylesheet" type="text/css" href="project1\css\font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css\style1.css"/>
+	<link rel="stylesheet" type="text/css" href="css\font-awesome.css">
 	<script type="text/javascript" src="\js\jquery.js"></script>
 	<script type="text/javascript" src="\js\bootstrap.bundle.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
