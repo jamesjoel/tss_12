@@ -1,3 +1,8 @@
+<?php
+include("admin/db.php");
+$que = "SELECT * FROM category";
+$result = mysqli_query($con, $que);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,9 +60,15 @@
 				<div class="dropdown-menu">
 					<div class="dropdown-header">Main Categories</div>
 					<div class="dropdown-divider"></div>
-					<a href="#" class="dropdown-item">Home Appliance</a>
-					<a href="#" class="dropdown-item">Electronics</a>
-					<a href="#" class="dropdown-item">Mobiles</a>
+					<?php
+					while($data=mysqli_fetch_assoc($result))
+					{ ?>
+						<a href="#" class="dropdown-item"><?php echo $data['name'];?></a>
+					<?php
+					}
+					?>
+
+					
 				</div>
 
 
