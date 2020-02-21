@@ -1,14 +1,11 @@
 <?php
 include("header.php");
-include("db.php");
-$que = "SELECT * FROM category";
-$result = mysqli_query($con, $que);
 ?>
 
 <div class="container mt-4">
 	<div class="row">
 		<div class="col-md-6 offset-md-3">
-				<form action="save_product.php" method="post">
+				<form action="sproduct.php" method="post">
 			<div class="card">
 				<div class="card-header">
 					<h3>Add New Product</h3>
@@ -28,15 +25,12 @@ $result = mysqli_query($con, $que);
 					<div class="form-group">
 						<label>Category</label>
 						<select class="form-control" name="cate">
-							<option>select</option>
-							<?php
-							while($data=mysqli_fetch_assoc($result))
-							{ ?>
-								<option><?php echo $data['name'];?></option>
-							<?php
-							}
-							?>
-						
+							<option>Select</option>
+							<option>Electronics</option>
+							<option>Home Appliance</option>
+							<option>Mobiles</option>
+							<option>Fashion Men</option>
+							<option>Fashion Women</option>
 						</select>
 					</div>
 
@@ -58,7 +52,7 @@ $result = mysqli_query($con, $que);
 
 				</div>
 				<div class="card-footer">
-					<input type="submit" value="Add Product" class="btn btn-success">
+					<input type="submit" value="Add Product" class="btn btn-warning">
 				</div>
 			</div>
 				</form>

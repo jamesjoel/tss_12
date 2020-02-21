@@ -12,6 +12,6 @@ $que = "INSERT INTO product (name, price, category, discount, detail) VALUES ('$
 
 mysqli_query($con, $que);
 
-header("location:view_product.php");
+header("location:aproduct.php");
 
 ?>
