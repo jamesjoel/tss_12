@@ -16,7 +16,7 @@ include("header.php");
 					<div class="form-group">
 						<label>Full Name</label>
 						<div class="input-group">
-							<input type="text" placeholder="Full Name" name="full_name " class="form-control">
+							<input type="text" placeholder="Full Name" name="name" class="form-control">
 						</div>
 					</div>
 					<div class="form-group">
@@ -52,7 +52,7 @@ include("header.php");
 
 					<div class="form-group">
 						<label>City</label>
-						<select class="form-control" name="City">
+						<select class="form-control" name="city">
 							<option>Select</option>
 							<option>Indore</option>
 							<option>Mumbai</option>

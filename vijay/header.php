@@ -60,6 +60,7 @@
 		</div>
   </div>
 </div>
+</div>
 <hr />
   <nav class="navbar nav-color navbar-expand-sm text-light sticky-top">
 	<a class="navbar-brand text-light" href="#">MyShop.com</a>

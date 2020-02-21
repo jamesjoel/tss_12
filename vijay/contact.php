@@ -1,6 +1,11 @@
 <?php
 include("header.php");
+<<<<<<< HEAD
 ?>
+=======
+?> 
+
+>>>>>>> ee3b5d0d6b8cc11fbd8e4a4df0bff6813932ed76
 <div class="container">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
