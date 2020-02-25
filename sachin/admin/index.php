@@ -51,7 +51,7 @@ $result = mysqli_query($con, $que);
 		<div class="col-md-3 col-6 col-sm-6">
 			<div class="card my-3">
 				<span style="background-color : blue; width: 50px; text-align: center; margin-left: 150px; padding: 5px; color: #FFF;"><?php echo $d; ?>%</span>
-				<img src="images/7.jpg" class="card-img-top">
+				<img src="images/c7.jpg" class="card-img-top">
 
 				<div class="card-body">
 					<p class="font-weight-bold m-0 p-0"><?php echo $data['name'];?></p>
