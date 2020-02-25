@@ -66,7 +66,7 @@ include("header.php")
 					</div>
 				</div>
 				<div class="card-footer">
-					<button type="submit" class="btn btn-blue">Signup <i class="fa fa-user" aria-hidden="true"></i></button>
+					<button type="submit" class="btn btn-warning">Signup <i class="fa fa-user" aria-hidden="true"></i></button>
 				</div>
 			</div>
 		</form>

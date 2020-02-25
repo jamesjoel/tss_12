@@ -13,7 +13,7 @@ include("header.php");
 				<div class="card-body">
 					<div class="form-group">
 						<label>Title/Name</label>
-						<input type="text" placeholder="Title/Name" class="form-control" name="title">
+						<input type="text" placeholder="Title/Name" class="form-control" name="name">
 					</div>
 					<div class="form-group">
 						<label>Price</label>
@@ -24,7 +24,7 @@ include("header.php");
 
 					<div class="form-group">
 						<label>Category</label>
-						<select class="form-control" name="cate">
+						<select class="form-control" name="category">
 							<option>Select</option>
 							<option>Electronics</option>
 							<option>Home Appliance</option>
