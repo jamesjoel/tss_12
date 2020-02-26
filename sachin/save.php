@@ -1,5 +1,5 @@
 <?php  
-//print_r($_POST);
+print_r($_POST);
 $con =mysqli_connect("localhost" ,"root" ,"" ,"project12");
 $a = $_POST['name'];
 $b = $_POST['email'];
