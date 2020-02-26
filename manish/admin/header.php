@@ -17,7 +17,7 @@
 	<div id="menu" class="navbar-collapse collapse">
 		<ul class="nav navbar-nav text ml-5 hhvv">
 			<li class="nav-item ">
-				<a href="#" class="nav-link text ">Dashboard</a>
+				<a href="index.php" class="nav-link text ">Dashboard</a>
 			</li>
 			<li cass="nav-item">
 				<a href="add_product.php" class="nav-link text">Add Product</a>
