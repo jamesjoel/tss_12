@@ -18,7 +18,7 @@
 	<div id="menu" class="navbar-collapse collapse hhvv">
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
-				<a href="#" class="nav-link">Dashboard</a>
+				<a href="index.php" class="nav-link">Dashboard</a>
 			</li>
 			<li cass="nav-item">
 				<a href="aproduct.php" class="nav-link">Add Product</a>

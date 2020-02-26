@@ -8,7 +8,7 @@ $result = mysqli_query($con, $que);
 <div class="container mt-4">
 	<div class="row">
 		<div class="col-md-6 offset-md-3">
-				<form action="save_product.php" method="post">
+				<form action="save_product.php" method="post" enctype="multipart/form-data">
 			<div class="card">
 				<div class="card-header">
 					<h3>Add New Product</h3>
@@ -46,7 +46,7 @@ $result = mysqli_query($con, $que);
 					</div>
 					<div class="form-group">
 						<label>Image</label>
-						<input type="file"  class="form-control">
+						<input type="file" name="image" class="form-control">
 					</div>
 					<div class="form-group">
 						<label>Detail</label>
