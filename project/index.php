@@ -1,4 +1,5 @@
 <?php
+include("admin/db.php");
 include("header.php");
 $que = "SELECT * FROM product";
 $result = mysqli_query($con, $que);
