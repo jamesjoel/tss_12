@@ -30,7 +30,7 @@
 				<a href="view_category.php" class="nav-link">View Category</a>
 			</li>
 			<li cass="nav-item">
-				<a href="#" class="nav-link">Logout</a>
+				<a href="logout.php" class="nav-link">Logout</a>
 			</li>
 		</ul>
 	</div>

@@ -1,5 +1,5 @@
-
 <?php
+include("admin/db.php");
 include("header.php");
 ?>
 

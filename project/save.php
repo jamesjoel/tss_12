@@ -1,6 +1,5 @@
 <?php
-// print_r($_POST);
-// Connection to Database
+include("admin/db.php");
 $con = mysqli_connect("localhost", "root", "password", "tss12");
 
 
