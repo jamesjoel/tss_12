@@ -12,7 +12,7 @@ $result = mysqli_query($con, $que);
 ?>
 <div class="container mt-4">
 	<div class="row">
-		<div class="col-md-8 offset-md-2">
+		<div class="col-md-12">
 			<h2>View All Product</h2>
 			<table class="table table-bordered table-dark table-hover">
 				<tr>
@@ -21,6 +21,8 @@ $result = mysqli_query($con, $que);
 					<th>Category</th>
 					<th>Price</th>
 					<th>Discount</th>
+					<th>Edit</th>
+					<th>Delete</th>
 				</tr>
 				<?php
 				while($data=mysqli_fetch_assoc($result))
@@ -31,6 +33,8 @@ $result = mysqli_query($con, $que);
 						<td><?php echo $data['category']; ?></td>
 						<td><?php echo $data['price']; ?></td>
 						<td><?php echo $data['discount']; ?></td>
+						<td><a href="#" class="btn btn-sm btn-info">Edit</a></td>
+						<td><a href="#" class="btn btn-sm btn-danger">Delete</a></td>
 					</tr>	
 				<?php
 				}

@@ -6,6 +6,10 @@ $con = mysqli_connect("localhost", "root", "password", "tss12");
 $a = $_POST['name'];
 $b = $_POST['email'];
 $c = $_POST['pass'];
+
+
+$c = sha1($c);
+
 $d = $_POST['add'];
 $e = $_POST['city'];
 $f = $_POST['gender'];
