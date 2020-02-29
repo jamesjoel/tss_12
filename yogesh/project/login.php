@@ -8,7 +8,7 @@ include("header.php")
 			<div class="card my-4">
 				<div class="card-header">
 					<h4 class="mb-0">User Login</h4>
-					<small>For New User <a href="signup.html">Signup</a> Here</small>
+					<small>For New User <a href="signup.php">Signup</a> Here</small>
 				</div>
 				<div class="card-body">
 					<div class="form-group">

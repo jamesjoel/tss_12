@@ -1,5 +1,4 @@
 <?php
-include("admin/db.php");
 $que = "SELECT * FROM category";
 $result = mysqli_query($con, $que);
 ?>
@@ -92,12 +91,34 @@ $result = mysqli_query($con, $que);
 			<li class="nav-item">
 				<a href="#" class="nav-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i> MyCart <span class="badge badge-pill badge-light">2</span></a>
 			</li>
+			<?php
+			if(isset($_SESSION['is_user_logged_in']))
+			{ ?>
+
+			<li class="nav-item">
+		         <a class="nav-link" href="logout.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a>
+		    </li>
+            <li class="nav-item">
+                <a class="nav-link" href="my_account.php"><i class="fa fa-user" aria-hidden="true"></i> My Account</a>
+            </li>
+
+
+			<?php
+			}
+			else
+			{ ?>
+
 			<li class="nav-item">
 		         <a class="nav-link" href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 		    </li>
             <li class="nav-item">
                 <a class="nav-link" href="signup.php"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
             </li>
+
+
+			<?php
+			}
+			?>
         </ul>
 		    
 

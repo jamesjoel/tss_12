@@ -1,5 +1,11 @@
 <?php
-include("db.php");
+include('db.php');
+
+if(! isset($_SESSION['is_admin_logged_in']))
+{
+	header("location:index.php");
+}
+
 include("header.php");
 
 $que="SELECT * FROM category";
@@ -15,6 +21,8 @@ $result=mysqli_query($con, $que);
 				<tr>
 					<th>S.No.</th>
 					<th>Category Name</th>
+					<th>Edit</th>
+					<th>Delete</th>
 				</tr>
 				<?php
 				while($data=mysqli_fetch_assoc($result))
@@ -22,6 +30,8 @@ $result=mysqli_query($con, $que);
 					<tr>
 						<td><?php echo $data['id'] ?></td>
 						<td><?php echo $data['name'];?></td>
+						<td><a class="btn btn-sm btn-info" href="#">Edit</a></td>
+						<td><a class="btn btn-sm btn-danger" href="delete_cate.php?cateid=<?php echo $data['id'] ?>">Delete</a></td>
 					</tr>					
 				<?php
 				}

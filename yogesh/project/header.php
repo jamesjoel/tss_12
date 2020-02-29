@@ -62,7 +62,7 @@
 
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="index.php">Home</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">About</a>
@@ -81,10 +81,10 @@
 				<a href="#" class="nav-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i> MyCart <span class="badge badge-pill badge-light">2</span></a>
 			</li>
 			<li class="nav-item">
-		         <a class="nav-link" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+		         <a class="nav-link" href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 		    </li>
             <li class="nav-item">
-                <a class="nav-link" href="signup.html"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
+                <a class="nav-link" href="signup.php"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
             </li>
         </ul>
 		    
