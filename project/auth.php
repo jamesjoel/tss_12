@@ -15,7 +15,7 @@ if(mysqli_num_rows($result)==1)
 	$data = mysqli_fetch_assoc($result);
 	// print_r($data);
 	// echo $data['password'];
-	if($data['password']==$p)
+	if($data['password']==sha1($p))
 	{
 		// print_r($data);
 		// die;
