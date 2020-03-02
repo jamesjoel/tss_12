@@ -33,7 +33,7 @@ $result = mysqli_query($con, $que);
 						<td><?php echo $data['category']; ?></td>
 						<td><?php echo $data['price']; ?></td>
 						<td><?php echo $data['discount']; ?></td>
-						<td><a href="#" class="btn btn-sm btn-info">Edit</a></td>
+						<td><a href="edit_pro.php?proid=<?php echo $data['id'] ?>" class="btn btn-sm btn-info">Edit</a></td>
 						<td><a href="#" class="btn btn-sm btn-danger">Delete</a></td>
 					</tr>	
 				<?php

@@ -30,7 +30,7 @@ $result=mysqli_query($con, $que);
 					<tr>
 						<td><?php echo $data['id'] ?></td>
 						<td><?php echo $data['name'];?></td>
-						<td><a class="btn btn-sm btn-info" href="#">Edit</a></td>
+						<td><a class="btn btn-sm btn-info" href="edit_cate.php?cateid=<?php echo $data['id'] ?>">Edit</a></td>
 						<td><a class="btn btn-sm btn-danger" href="delete_cate.php?cateid=<?php echo $data['id'] ?>">Delete</a></td>
 					</tr>					
 				<?php
