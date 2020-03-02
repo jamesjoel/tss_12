@@ -1,7 +1,11 @@
 <?php
+include("admin/db.php");
 include("header.php");
 ?>
 
+<div class="jumbotron">
+	<h1 class="text-center">About Us</h1>
+</div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-6 offset-md-3 my-4">

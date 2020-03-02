@@ -1,5 +1,6 @@
 <?php
 include("db.php");
+
 $a = $_POST['title'];
 $b = $_POST['price'];
 $c = $_POST['cate'];

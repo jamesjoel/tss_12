@@ -9,21 +9,21 @@
 	background-color: #8181F7 !important;
 }
 .nav-color ul li a{
-	color: #FFF !important;
+	color: #000 !important;
 }
 .nav-color .dropdown .dropdown-item{
-	color: #FFF !important;
+	color: #000 !important;
 }
 
 .social .nav-item .nav-link{
-	color: #343a40 !important;
+	color: #000 !important;
 }
 .box{
 	min-height:500px;
 	background-color:  #fff;
 	width: 100%;
-	background-image:  url("../images/1.jpg");
-	background-repeat: no-repeat;
+	background-image:   url("../images/1.jpg");
+	background-repeat: no-repeat; 
 
 }
 .btn-blue{

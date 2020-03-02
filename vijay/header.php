@@ -1,3 +1,8 @@
+<?php
+include("admin/db.php");
+$query = "SELECT * FROM category";
+$result = mysqli_query($con, $query);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,33 +79,24 @@
 			<li class="nav-item dropdown">
 				<a data-toggle="dropdown" class="px-md-4 mx-md-4 px-0 mx-0 nav-link font-weight-bold" href="#"><i class="fa fa-bars" aria-hidden="true"></i> Categories</a>
 				<div class="dropdown-menu">
-					<div class="dropdown-header">Main Categories</div>
+					<div class="dropdown-header text-dark">Main Categories</div>
 					<div class="dropdown-divider"></div>
-					<a href="#" class="dropdown-item text-light">Home Appliance</a>
-					<a href="#" class="dropdown-item text-dark">Electronics</a>
-					<a href="#" class="dropdown-item">Mobiles</a>
-				</div>
+					<?php
+					while($data=mysqli_fetch_assoc($result))
+					{ ?>
+						<a href="#" class="dropdown-item text-dark"><?php echo $data['name'];?></a>
+					<?php
+					}
+					?>
 
+					
+				</div>
 		</li>
+
+		
 		<li class="nav-item">
 			<a href="fashion.php" class="nav-link text-dark font-weight-bold">Fashion</a>
 		</li>
-		<li class="nav-item">
-			<a href="#" class="nav-link text-dark font-weight-bold">Supermart</a>
-		</li>
-		<li class="nav-item">
-			<a href="#" class="nav-link text-dark font-weight-bold">Electronics</a>
-		</li>
-		<li class="nav-item">
-			<a href="#" class="nav-link text-dark font-weight-bold">Baby & Toys</a>
-		</li>
-		<li class="nav-item">
-			<a href="#" class="nav-link text-dark font-weight-bold">Furniture</a>
-		</li>
-		<li class="nav-item">
-			<a href="#" class="nav-link text-dark font-weight-bold">Clothing</a>
-		</li>
-
 		<li class="nav-item">
 				<a class="nav-link text-dark font-weight-bold" href="index.php">Home</a>
 			</li>
@@ -118,16 +114,44 @@
 			<li class="nav-item">
 				<a href="#" class="nav-link text-dark"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Myiteam <span class="badge badge-pill badge-dark">2</span></a>
 			</li>
+
+			<?php
+			if(isset($_SESSION['is_user_logged_in']))
+			{ ?>
+              
+              	<li class="nav-item">
+		         <a class="nav-link" href="logout.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a>
+		    </li>
+            <li class="nav-item">
+                <a class="nav-link" href="my_account.php"><i class="fa fa-user" aria-hidden="true"></i> My Account</a>
+            </li>
+
+
+            <?php
+			}
+			else
+			{ ?>
+
+
 			<li class="nav-item">
 		         <a class="nav-link text-dark" href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 		    </li>
             <li class="nav-item">
                 <a class="nav-link text-dark" href="signup.php"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
             </li>
+
+         	<?php
+			}
+			?>
+
         </ul>
 	</div>
 </nav>
 <hr />
+
+
+
+
 	
 <div class="box">
 <div class="col-md-6 offset-md-4">

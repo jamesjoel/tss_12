@@ -27,6 +27,7 @@ $result=mysqli_query($con, $que);
 				<?php
 				while($data=mysqli_fetch_assoc($result))
 				{ ?>
+				
 					<tr>
 						<td><?php echo $data['id'] ?></td>
 						<td><?php echo $data['name'];?></td>

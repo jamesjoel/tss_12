@@ -12,9 +12,6 @@ include("db.php");
 <body>
 <nav class="navbar bg-dark navbar-expand-sm navbar-dark">
 	<a href="#" class="navbar-brand">Administrator</a>
-	
-	
-
 </nav>
 
 <div class="container mt-4">
