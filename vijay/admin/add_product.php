@@ -1,11 +1,25 @@
 <?php
+include("db.php");
+
+
+if(! isset($_SESSION['is_admin_logged_in']))
+{
+	header("location:index.php");
+}
+
+
+
+
 include("header.php");
+$query = "SELECT * FROM category";
+$result = mysqli_query($con, $query);
 ?>
 
 <div class="container mt-4">
 	<div class="row">
 		<div class="col-md-6 offset-md-3">
-				<form action="save_product.php" method="post">
+				<form action="save_product.php" method="post"  enctype="multipart/form-data" >
+				
 			<div class="card">
 				<div class="card-header">
 					<h3>Add New Product</h3>
@@ -22,17 +36,20 @@ include("header.php");
 
 
 
-					<div class="form-group">
+				<div class="form-group">
 						<label>Category</label>
-						<select class="form-control" name="cate">
+						<select class="form-control" name="category">
 							<option>Select</option>
-							<option>Electronics</option>
-							<option>Home Appliance</option>
-							<option>Mobiles</option>
-							<option>Fashion Men</option>
-							<option>Fashion Women</option>
+							<?php
+							while($data=mysqli_fetch_assoc($result))
+							{ ?>
+								<option><?php echo $data['name'];?></option>
+							<?php
+							}
+							?>
 						</select>
 					</div>
+
 
 					<div class="form-group">
 						<label>Discount</label>
@@ -40,8 +57,8 @@ include("header.php");
 					</div>
 					<div class="form-group">
 						<label>Image</label>
-						<input type="file"  class="form-control">
-					</div>
+						<input type="file" name="image"  class="form-control">
+					
 					<div class="form-group">
 						<label>Detail</label>
 						<textarea class="form-control" name="detail"></textarea>

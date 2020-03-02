@@ -16,13 +16,13 @@
 <div id="menu" class="navbar-collapse collapse">
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
-				<a href="#" class="nav-link  text-light font-weight-bold">Dashboard</a>
+				<a href="index.php" class="nav-link  text-light font-weight-bold">Dashboard</a>
 			</li>
 			<li cass="nav-item">
 				<a href="add_product.php" class="nav-link text-light font-weight-bold">Add Product</a>
 			</li>
 			<li cass="nav-item">
-				<a href="#" class="nav-link text-light font-weight-bold">View Product</a>
+				<a href="view_product.php" class="nav-link text-light font-weight-bold">View Product</a>
 			</li>
 			<li cass="nav-item">
 				<a href="add_category.php" class="nav-link text-light font-weight-bold">Add Category</a>
@@ -31,7 +31,7 @@
 				<a href="view_category.php" class="nav-link text-light font-weight-bold">View Category</a>
 			</li>
 			<li cass="nav-item">
-				<a href="#" class="nav-link text-light font-weight-bold">Logout</a>
+				<a href="logout.php" class="nav-link text-light font-weight-bold">Logout</a>
 			</li>
 		</ul>
 	</div>

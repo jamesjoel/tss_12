@@ -2,15 +2,28 @@
 include("db.php");
 
 $a = $_POST['title'];
-$b = $_POST['price'];
-$c = $_POST['cate'];
+$b = $_POST['category'];
+$c = $_POST['price'];
 $d = $_POST['discount'];
 $e = $_POST['detail'];
+$name = $_FILES['image']['name'];
+$tmpname = $_FILES['image']['tmp_name'];
+$size = $_FILES['image']['size'];
+$type = $_FILES['image']['type'];
 
-$query = "INSERT INTO product (name, price, category, discount, detail) VALUES ('$a', '$b', '$c', '$d', '$e')";
+if($type=="image/jpeg" ||  $type == "image/jpg" || $type == "image/png" || $type == "image/gif")
+{
+
+	move_uploaded_file($tmpname, "product_image/".$name);
+echo $query = "INSERT INTO product (title, category, price, discount, detail, image) VALUES ('$a', '$b', '$c', '$d', '$e', '$name')";
 
 mysqli_query($con, $query);
 
-header("location:add_product.php");
-
+header("location:view_product.php");
+}
+else
+{
+	echo 'This File type not allwed';
+}
 ?>
+

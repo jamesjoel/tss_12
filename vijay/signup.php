@@ -1,4 +1,5 @@
 <?php
+include("admin/db.php");
 include("header.php");
 ?>
 <div class="saperator"></div>

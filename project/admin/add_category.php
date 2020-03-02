@@ -13,7 +13,7 @@ include("header.php");
 <div class="container mt-4">
 	<div class="row">
 		<div class="col-md-6 offset-md-3">
-			<form action="save_category.php" method="post">
+		  <form action="save_category.php" method="post">
 			<div class="card">
 				<div class="card-header">
 					<h3>Add New Category</h3>
@@ -32,7 +32,7 @@ include("header.php");
 					<input type="submit" value="Add Category" class="btn btn-success">
 				</div>
 			</div>
-				</form>
+		  </form>
 		</div>
 	</div>
 </div>
