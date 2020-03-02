@@ -1,5 +1,6 @@
 <?php  
-include("header.php")
+include("admin/db.php");
+include("header.php");
 ?>
 <div class="container" style="min-height: 500px;">
 	<div class="row">
@@ -22,7 +23,7 @@ include("header.php")
 						<label>Username/Email</label>
 						<div class="input-group">
 							
-							<input type="text"  name="email"placeholder="Username/Email" class="form-control">
+							<input type="text"  name="email" placeholder="Username/Email" class="form-control">
 						</div>
 					</div>
 					<div class="form-group">

@@ -1,6 +1,11 @@
 <?php
-include("header.php");
 include("db.php");
+
+if(! isset($_SESSION['is_admin_logged_in']))
+{
+	header("location:index.php");
+}
+include("header.php");
 $que = "SELECT * FROM category";
 $result = mysqli_query($con, $que);
 ?>
@@ -8,7 +13,7 @@ $result = mysqli_query($con, $que);
 <div class="container mt-4">
 	<div class="row">
 		<div class="col-md-6 offset-md-3">
-				<form action="sproduct.php" method="post">
+				<form action="sproduct.php" method="post"enctype="multipart/form-data">
 			<div class="card">
 				<div class="card-header">
 					<h3>Add New Product</h3>

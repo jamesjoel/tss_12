@@ -1,8 +1,11 @@
 <?php
-
-include("header.php");
 include("db.php");
 
+if(! isset($_SESSION['is_admin_logged_in']))
+{
+	header("location:index.php");
+}
+include("header.php");
 $que="SELECT * FROM product";
 $result=mysqli_query($con, $que);
 
@@ -20,6 +23,8 @@ $result=mysqli_query($con, $que);
 					<th>Cetegory</th>
 					<th>Discount</th>
 					<th>Detail</th>
+					<th>Edit</th>
+					<th>Delete</th>
 				</tr>
 				<?php
 				while($data=mysqli_fetch_assoc($result))
@@ -31,14 +36,14 @@ $result=mysqli_query($con, $que);
 						<td><?php echo $data['category'];?></td>
 						<td><?php echo $data['discount'];?></td>
 						<td><?php echo $data['detail'];?></td>
+						<td><a href="#" class="btn btn-sm btn-warning">Edit</a></td>
+						<td><a class="btn btn-sm btn-warning" href="delete_product.php?cateid=<?php echo $data['id'] ?>">Delete</a></td>
+						<td>
 					</tr>					
 				<?php
 				}
 				?>
-
-
-
-			</table>
+             </table>
 		</div>
 	</div>
 </div>

@@ -19,7 +19,6 @@
 		<div id="menu" class="collapse navbar-collapse ">
 		<ul class="navbar-nav ml-5 col-4 col-md-9 ">
 			<li class="nav-item"><a href="index.php" class="nav-link text-light"> <i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
-		  <li class="nav-item"><a href="#" class="nav-link ml-3 text-light"> Gallery </a></li>
 			<li class="nav-item"><a href="#" class="nav-link ml-3 text-light "> About  </a></li>
 			<li class="nav-item"><a href="#" class="nav-link ml-3 text-light"> Contact </a></li>
 			<li class="nav-item">
@@ -28,10 +27,20 @@
             <li class="nav-item">
                 <a class="nav-link text-light" href="signup.php"><i class="fa fa-user" aria-hidden="true"></i> Signup</a>
             </li>
+            <?php
+			if(isset($_SESSION['is_user_logged_in']))
+			{ ?>
+
+		  <li class="nav-item"><a href="logout.php" class="nav-link ml-3 text-light"> logout </a></li>
+
 		
 		<li class="nav-item ml-0">
-                <a class="nav-link text-light" href="#"><i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></a>
-            </li></ul>
+                <a class="nav-link text-light" href="my_acc">MyAccount</a>
+            </li>
+            <?php
+			}
+			?>
+		</ul>
 			</nav>
 
 		</div>

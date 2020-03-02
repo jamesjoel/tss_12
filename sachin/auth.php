@@ -5,7 +5,7 @@ include("admin/db.php");
 
 $u = $_POST['username'];
 $p = $_POST['pass'];
-$que = "SELECT * FROM user WHERE email = '$u'";
+$que = "SELECT * FROM user1 WHERE email = '$u'";
 $result = mysqli_query($con, $que);
 
 // echo mysqli_num_rows($result);
@@ -17,8 +17,8 @@ if(mysqli_num_rows($result)==1)
 	// echo $data['password'];
 	if($data['password']==sha1($p))
 	{
-		 print_r($data);
-		 die;
+		// print_r($data);
+		// die;
 		$_SESSION['id']=$data['id'];
 		$_SESSION['name']=$data['name'];
 		$_SESSION['is_user_logged_in']=true;
