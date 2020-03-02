@@ -1,5 +1,9 @@
 <?php
-include("header.php")
+include("header.php");
+include("admin/db.php");
+
+$que = "SELECT * FROM product";
+$result = mysqli_query($con, $que);
 ?>
 
 <div class="container">

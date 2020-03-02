@@ -1,3 +1,7 @@
+<?php
+$que = "SELECT * FROM category";
+$result = mysqli_query($con, $que);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,10 +30,34 @@
 				<div class="dropdown-menu">
 					<div class="dropdown-header ml-1">All Categories</div>
 					<div class="dropdown-divider "></div>
+					<?php
+					while($data=mysqli_fetch_assoc($result))
+					{ ?>
+						<a href="#" class="dropdown-item"><?php echo $data['name'];?></a>
+					<?php
+					}
+					?>
 					<a href="lep.php" class="dropdown-item put">Leptops</a>
 					<a href="tv.php" class="dropdown-item put">Electronics</a>
 					<a href="mob.php" class="dropdown-item put">Mobiles</a>
 				</div>
+				<?php
+			if(isset($_SESSION['is_user_logged_in']))
+			{ ?>
+
+			<li class="nav-item">
+		         <a class="nav-link" href="logout.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a>
+		    </li>
+            <li class="nav-item">
+                <a class="nav-link" href="my_account.php"><i class="fa fa-user" aria-hidden="true"></i> My Account</a>
+            </li>
+
+
+			<?php
+			}
+			else
+			{ ?>
+
 				<li class="nav-item">
 		         <a class="nav-link text-light hov" href="login.php"><i class="fa fa-sign-in text-light " aria-hidden="true"></i> Login</a>
 		    </li>
@@ -41,15 +69,17 @@
 			<li class="nav-item">
 				<a href="#" class="nav-link text-light hov"><i class="fa fa-shopping-bag" aria-hidden="true"></i> MyCart <span class="badge badge-pill badge-danger">2</span></a>
 			</li>
+			<?php
+			}
+			?>
 		
 		</ul>
 			</nav>
 			<div class="container-fluid">
 				<div class="container slider mt-1"></div>
 				<div class=" col-md-12">
-					<h1 class=""></h1>
 				
 				</div>
 			</div>
 		</div>
-	</div>
+	
