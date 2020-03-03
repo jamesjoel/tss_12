@@ -1,7 +1,9 @@
 <?php
+include("admin/db.php");
 include("header.php");
 ?>
-	<div class="jumbotron">
+
+<div class="jumbotron">
 	<h1 class="text-center">Contact Us</h1>
 </div>
 <div class="container">
