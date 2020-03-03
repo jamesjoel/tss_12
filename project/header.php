@@ -27,6 +27,19 @@ $result = mysqli_query($con, $que);
 					
 					
 						<ul class="nav social">
+									<?php
+									if(isset($_SESSION['is_user_logged_in']))
+									{ ?>
+									<li class="nav-item">
+										<a href="#" class="nav-link" style="background-color: #343A40; color: #FFF !important">
+											<?php echo $_SESSION['name']; ?>
+										</a>
+										
+									</li>
+
+									<?php
+									}
+									?>
 							<li class="nav-item">
 								<a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 							</li>

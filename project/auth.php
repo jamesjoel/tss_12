@@ -17,12 +17,11 @@ if(mysqli_num_rows($result)==1)
 	// echo $data['password'];
 	if($data['password']==sha1($p))
 	{
-		 print_r($data);
-		 die;
+		 //print_r($data);
+		 // die;
 		$_SESSION['id']=$data['id'];
 		$_SESSION['name']=$data['name'];
 		$_SESSION['is_user_logged_in']=true;
-
 		header("location:my_account.php");
 	}
 	else
