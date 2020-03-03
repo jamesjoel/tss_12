@@ -5,7 +5,7 @@ include("admin/db.php");
 
 $u = $_POST['username'];
 $p = $_POST['pass'];
-$que = "SELECT * FROM user WHERE email = '$u'";
+echo $que = "SELECT * FROM user11 WHERE email = '$u'";
 $result = mysqli_query($con, $que);
 
 // echo mysqli_num_rows($result);

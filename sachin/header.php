@@ -46,10 +46,10 @@ $result = mysqli_query($con, $que);
 			{ ?>
 
 			<li class="nav-item">
-		         <a class="nav-link" href="logout.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a>
+		         <a class="nav-link text-light hov" href="logout.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a>
 		    </li>
             <li class="nav-item">
-                <a class="nav-link" href="my_account.php"><i class="fa fa-user" aria-hidden="true"></i> My Account</a>
+                <a class="nav-link text-light hov" href="my_account.php"><i class="fa fa-user" aria-hidden="true "></i> My Account</a>
             </li>
 
 

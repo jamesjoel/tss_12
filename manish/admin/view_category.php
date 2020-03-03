@@ -23,8 +23,8 @@ $result=mysqli_query($con, $que);
 					<tr>
 						<td><?php echo $data['id'] ?></td>
 						<td><?php echo $data['name'];?></td>
-						<td><a class="btn btn-sm btn-light" href="#">Edit</a></td>
-						<td><a class="btn btn-sm btn-light" href="delete_cate.php?cateid=<?php echo $data['id'] ?>">Delete</a></td>
+						<td><a class="btn btn-sm btn-light" href="edit_cate.php?cateid=<?php echo $data['id'] ?>">Edit</a></td>
+						<td><a class="btn btn-sm btn-light" href="delete_cete.php?cateid=<?php echo $data['id'] ?>">Delete</a></td>
 					</tr>					
 				<?php
 				}
