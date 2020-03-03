@@ -10,7 +10,7 @@ include("admin/db.php");
 				<div class="card-header"><h4 class="text-center">Member Login</h></div>
 				<div class="card-body">
 					<div class="form-group">
-						<input type="text" name="Username" placeholder="Username"  class="form-control radi">
+						<input type="text" name="username" placeholder="Username"  class="form-control radi">
 					</div>
 					<div class="form-group">
 						<input  type="password" name="pass" placeholder="password"  class="form-control radi">
