@@ -16,7 +16,7 @@ include("db.php");
 
 <div class="container mt-4">
 	<div class="row mt-4">
-		<div class="col-md-4 offset-md-4">
+		<div class="col-md-6 offset-md-3">
 			<form action="auth.php" method="post">
 			<div class="card">
 				<div class="card-header">
@@ -33,7 +33,7 @@ include("db.php");
 					</div>
 				</div>
 				<div class="card-footer">
-					<input type="submit" value="Login" class="btn btn-success">
+					<input type="submit" value="Login" class="btn btn-warning">
 				</div>
 				<p class="text-danger text-center">
 					<?php

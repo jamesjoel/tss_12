@@ -26,15 +26,17 @@ $result=mysqli_query($con, $que);
 				</tr>
 
 				<?php
+				$n=1;
 				while($data=mysqli_fetch_assoc($result))
 				{ ?>
 					<tr>
-						<td><?php echo $data['id'] ?></td>
+						<td><?php echo $n ?></td>
 						<td><?php echo $data['name'];?></td>
-						<td><a class="btn btn-sm btn-warning" href="edit_cate.php?cateid=<?php echo $data['id'] ?>">Edit</a></td>
+						<td><a class="btn btn-sm btn-warning hhvv" href="edit_cate.php?cateid=<?php echo $data['id'] ?>">Edit</a></td>
 						<td><a class="btn btn-sm btn-warning" href="delete_cate.php?cateid=<?php echo $data['id'] ?>">Delete</a></td>
 					</tr>					
 				<?php
+				$n++;
 				}
 				?>
 

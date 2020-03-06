@@ -37,9 +37,7 @@ $result = mysqli_query($con, $que);
 					<?php
 					}
 					?>
-					<a href="lep.php" class="dropdown-item put">Leptops</a>
-					<a href="tv.php" class="dropdown-item put">Electronics</a>
-					<a href="mob.php" class="dropdown-item put">Mobiles</a>
+					
 				</div>
 				<?php
 			if(isset($_SESSION['is_user_logged_in']))

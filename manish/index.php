@@ -1,6 +1,7 @@
 <?php
-include("header.php");
+
 include("admin/db.php");
+include("header.php");
 
 $que = "SELECT * FROM product";
 $result = mysqli_query($con, $que);
@@ -44,172 +45,33 @@ $result = mysqli_query($con, $que);
 				
 			</div>
 		</div>
+		<?php
+		while($data=mysqli_fetch_assoc($result))
+		{
+			$p = $data['price'];
+			$d = $data['discount'];
+			$x = $p*$d/100;
+			$p = $p-$x;
+		?>
+
 		<div class="col-md-3 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/13.jpg" class="image-fluid" alt="responsive imagee ">
+			<div class="card my-3">
+				<span style="background-color :green; width: 50px; text-align: center; margin-left: 150px; padding: 5px; color: #FFF;"><?php echo $d; ?>%</span>
+				<img src="admin/product_image/<?php echo $data['image'] ?>" height="200" width="150" class="card-img-top">
 
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By flipkart.com</small>
-                        </div>
+				<div class="card-body">
+					<p class="font-weight-bold m-0 p-0"><?php echo $data['name'];?></p>
+					<small>(<del>$ <?php echo $data['price'];?></del>)</small>
+					<small class="font-weight-bold">$ <?php echo $p;?>.00</small>
 				</div>
-				
+				<div class="card-footer text-center">
+					<button class="btn btn-sm btn-blue">Buy</button>
+				</div>
 			</div>
 		</div>
-		<div class="col-md-3 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/14.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                           <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By flipkart.com</small>
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-md-3 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/7.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By flipkart.com</small>
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-md-3 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/9.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By flipkart.com</small>
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-md-3 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/6.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By Glito.com</small>
-
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-md-3 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/12.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By Glito.com</small>
-
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-
-<div class="col-md-3 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/15.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By myntra.com</small>
-
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-<div class="col-md-3 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/8.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By flipkart.com</small>
-
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-md-4 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/insta-3.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By flipkart.com</small>
-
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-md-4 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/insta-1.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By flipkart.com</small>
-
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-md-4 col-6 col-sm-6">
-			<div class="card my-3 ml-0">
-				<img src="images/insta-2.jpg" class="image-fluid" alt="responsive imagee ">
-
-				<div class="card-body ">
-					<div class="inner-text">
-                            <button class="btn btn-danger btn-small butt">OFFER</button><small>Deals</small><br>
-                        <small>    $ 580 <del class="text-primary">$1400</del> 61% off</small> <br>
-                        <small>By flipkart.com</small>
-
-                        </div>
-				</div>
-				
-			</div>
-		</div>
-
-	</div>
-</div>
-
+		<?php
+		}
+		?>
 
 
 <?php

@@ -7,7 +7,7 @@ include("admin/db.php");
 		<div class="col-md-6 offset-3 col-8 col-offset-2 bg-danger">
 			<form action="auth.php" method="post">
 			<div class="card my-5 mx-5">
-				<div class="card-header"><h4 class="text-center">Member Login</h></div>
+				<div class="card-header"><h4 class="text-center">Member Login</h4></div>
 				<div class="card-body">
 					<div class="form-group">
 						<input type="text" name="username" placeholder="Username"  class="form-control radi">

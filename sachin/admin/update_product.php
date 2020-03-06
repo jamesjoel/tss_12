@@ -8,7 +8,7 @@ $c = $_POST['cate'];
 $d = $_POST['discount'];
 $e = $_POST['detail'];
 
-$x = $_POST['pid'];
+$x = $_POST['proid'];
 
 $que = "UPDATE product SET name = '$a', price = '$b', category = '$c', discount = '$d', detail = '$e' WHERE id = $x";
 mysqli_query($con, $que);
