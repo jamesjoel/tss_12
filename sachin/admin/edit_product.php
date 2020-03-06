@@ -14,8 +14,6 @@ $a = $_GET['proid'];
 $que2 = "SELECT * FROM product WHERE id = $a";
 $result2 = mysqli_query($con, $que2);
 $data2 = mysqli_fetch_assoc($result2);
-// print_r($data2);
-
 
 $que = "SELECT * FROM category";
 $result = mysqli_query($con, $que);
@@ -25,9 +23,9 @@ $result = mysqli_query($con, $que);
 	<div class="row">
 		<div class="col-md-6 offset-md-3">
 
-			<form action="update_pro.php" method="post" enctype="multipart/form-data">
+			<form action="update_product.php" method="post" enctype="multipart/form-data">
 
-				<input type="hidden" name="pid" value="<?php echo $a; ?>">
+				<input type="hidden" name="proid" value="<?php echo $a; ?>">
 			<div class="card">
 				<div class="card-header">
 					<h3>Update Product</h3>

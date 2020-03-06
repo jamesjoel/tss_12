@@ -35,7 +35,7 @@
 
 		
 		<li class="nav-item ml-0">
-                <a class="nav-link text-light" href="my_acc">MyAccount</a>
+                <a class="nav-link text-light" href="my_account.php">My Profile</a>
             </li>
             <?php
 			}
@@ -44,7 +44,7 @@
 			</nav>
 
 		</div>
-		<div class="container  slider1 ">
+		<div class="container  slider ">
 			<div class="col-md-12  pt-5"><h1 class=" logo">High Fashion
 			</h1>
 			 <div class="off-card">

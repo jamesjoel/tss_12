@@ -27,10 +27,11 @@ $result=mysqli_query($con, $que);
 					<th>Delete</th>
 				</tr>
 				<?php
+				$n=1;
 				while($data=mysqli_fetch_assoc($result))
 				{ ?>
 					<tr>
-						<td><?php echo $data['id'] ?></td>
+						<td><?php echo $n; ?></td>
 						<td><?php echo $data['name'];?></td>
 						<td><?php echo $data['price'];?></td>
 						<td><?php echo $data['category'];?></td>
@@ -41,6 +42,7 @@ $result=mysqli_query($con, $que);
 						<td>
 					</tr>					
 				<?php
+				$n++;
 				}
 				?>
              </table>

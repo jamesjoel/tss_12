@@ -37,7 +37,7 @@ include("header.php");
 
 				</div>
 				<div class="card-footer">
-					<input type="submit" value="Update" class="btn btn-success">
+					<input type="submit" value="Update" class="btn btn-warning">
 				</div>
 			</div>
 				</form>
