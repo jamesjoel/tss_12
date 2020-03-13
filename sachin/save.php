@@ -14,8 +14,7 @@ $e = $_POST['city'];
 $g = $_POST['cont'];
 
 
-   $query = "INSERT INTO user1(name,email,password,address,gender,city,contact)
-                 VALUES('$a' ,'$b' ,'$c' ,'$d' ,'$f' ,'$e','$g')";
+   $query = "INSERT INTO user1('name','email','password','address','gender','city','contact') VALUES('$a' ,'$b' ,'$c' ,'$d' ,'$f' ,'$e','$g')";
 
   mysqli_query($con, $query);
 
