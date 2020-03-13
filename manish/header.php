@@ -13,10 +13,11 @@
 <body>
 	
 		<nav class=" navbar bg-danger  navbar-expand-sm navbar-dark sticky-top ">
-			<a href="#" class="navbar-brand ml-5"><h5 class="text-dark"><span>Shoping Loading Page </span></h5></a>
+			<a href="#" class="navbar-brand ml-5"><h5 class="text-dark"><span>+3+
+			Shoping Loading Page </span></h5></a>
 			<button data-toggle="collapse" data-target="#menu" class="navbar-toggler">
 			<span class="navbar-toggler-icon"></span></button>
-		<div id="menu" class="collapse navbar-collapse ">
+	-	<div id="menu" class="collapse navbar-collapse ">
 		<ul class="navbar-nav ml-5 col-4 col-md-9 ">
 			<li class="nav-item"><a href="index.php" class="nav-link text-light"> <i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
 			<li class="nav-item"><a href="#" class="nav-link ml-3 text-light "> About  </a></li>
