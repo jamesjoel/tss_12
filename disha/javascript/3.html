@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function demo1()
+		{
+			var a = document.getElementById("first_num").value;
+			var b = document.getElementById("second_num").value;
+
+			var x = parseInt(a);
+			var y = parseInt(b);
+
+			var c = x+y;
+
+			document.getElementById("ans").innerHTML="Your Ans is = "+c;
+		}
+		function demo2()
+		{
+			var a = document.getElementById("first_num").value;
+			var b = document.getElementById("second_num").value;
+
+			var x = parseInt(a);
+			var y = parseInt(b);
+
+			var c = x-y;
+
+			document.getElementById("ans").innerHTML="Your Ans is = "+c;
+		}
+		function demo3()
+		{
+			var a = document.getElementById("first_num").value;
+			var b = document.getElementById("second_num").value;
+
+			var x = parseInt(a);
+			var y = parseInt(b);
+
+			var c = x*y;
+
+			document.getElementById("ans").innerHTML="Your Ans is = "+c;
+		}
+		function demo4()
+		{
+			var a = document.getElementById("first_num").value;
+			var b = document.getElementById("second_num").value;
+
+			var x = parseInt(a);
+			var y = parseInt(b);
+
+			var c = x/y;
+
+			document.getElementById("ans").innerHTML="Your Ans is = "+c;
+		}
+	</script>
+</head>
+<body>
+First : <input type="text" id="first_num"/>
+<br />
+<br />
+Second : <input type="text" id="second_num"/>
+<br />
+<br />
+<button onclick="demo1()">+</button>
+<button onclick="demo2()">-</button>
+<button onclick="demo3()">x</button>
+<button onclick="demo4()">/</button>
+
+<h2 id="ans"></h2>
+</body>
+</html>
