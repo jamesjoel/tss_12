@@ -125,18 +125,10 @@ include("header.php");
 
 			}
 
-
-
-
-			return false;
+return false;
 
 		});
-
-
-
-	});
-
-
+});
 
 </script>
 

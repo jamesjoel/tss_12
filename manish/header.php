@@ -5,15 +5,15 @@
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="css\style1.css"/>
 	<link rel="stylesheet" type="text/css" href="css\font-awesome.css">
-	<script type="text/javascript" src="\js\jquery.js"></script>
-	<script type="text/javascript" src="\js\bootstrap.bundle.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 </head>
 <body>
 	
 		<nav class=" navbar bg-danger  navbar-expand-sm navbar-dark sticky-top ">
-			<a href="#" class="navbar-brand ml-5"><h5 class="text-dark"><span>+3+
+			<a href="#" class="navbar-brand ml-5"><h5 class="text-dark"><span>
 			Shoping Loading Page </span></h5></a>
 			<button data-toggle="collapse" data-target="#menu" class="navbar-toggler">
 			<span class="navbar-toggler-icon"></span></button>
