@@ -19,45 +19,73 @@ $("#submit_btn").click(function(){
   var x=$("#male").is(":checked");
   var y=$("#female").is(":checked");
 
+  var check = true;
+
   if (a=="")
    {
+   	check = false;
   	$("#full_name_msg").html("Insert Youer Full Name");
+  	$("#full_name").addClass("form-error");
   }
   else
   {
   	$("#full_name_msg").html("");
+  	$("#full_name").removeClass("form-error");
   }
   if (b=="")
    {
+   	check = false;
   	$("#email_msg").html("Insert Youer Email");
+  	$("#email").addClass("form-error");
   }
   else
   {
   	$("#email_msg").html("");
+	var reg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+if(reg.test(b)==false)
+    {
+    	check = false;
+     $("email_msg").html("Email Id Is Not Correct");
+   }
+  else
+   {
+      $("email_msg").html("");
+      $("#email").removeClass("form-error");
+     }
+
   }
   if (c=="")
    {
+   	check = false;
   	$("#pass_msg").html("Insert Youer Password");
+  	$("#pass").addClass("form-error");
   }
   else
   {
   	$("#pass_msg").html("");
+  	$("#pass").removeClass("form-error");
   }
   if (d=="")
    {
+   	check = false;
   	$("#re_pass_msg").html("Insert Youer Re-Password");
+  	$("#re_pass").addClass("form-error");
   }
   else
   {
   	$("#re_pass_msg").html("");
+  	
 
 if (c !=d) 
  {
+ 	check = false;
  $("#re_pass_msg").html(" Insert Correct Re-Password");
+ 
 }
 else
 {
 	$("#re_pass_msg").html("");
+	$("#re_pass").removeClass("form-error");
 }
 
 
@@ -65,23 +93,32 @@ else
   }
   if (e=="")
    {
+   	check = false;
   	$("#add_msg").html("Insert Youer Address");
+  	$("#add").addClass("form-error");
   }
   else
   {
   	$("#add_msg").html("");
+  	$("#add").removeClass("form-error");
   }
+
   if (f=="Select")
    {
+   	check = false;
   	$("#city_msg").html("Insert Youer City");
+  	$("#city").addClass("form-error");
   }
   else
   {
   	$("#city_msg").html("");
+  	$("#city").removeClass("form-error");
   }
   if (g=="")
    {
+   	check = false;
   	$("#contact_msg").html("Insert Youer Contact");
+  	$("#contact").addClass("form-error");
   }
   else
   {
@@ -89,19 +126,24 @@ else
 
 if (isNaN(g)==true)
  {
+ 	check = false;
 	$("#contact_msg").html("Insert Number Only");
 }
 else
 {
 	$("#contact_msg").html("");
+	$("#contact").removeClass("form-error");
 
   if (g.length !=10) 
   {
+  	check = false;
 $("#contact_msg").html("Contact Number Should Be 10-Digit");
+$("#contact").addClass("form-error");
   }
 else
 {
 	$("#contact_msg").html("");
+	$("#contact").removeClass("form-error");
 }
 }
 
@@ -109,7 +151,9 @@ else
 
   if(x==false && y==false)
 			{
+				check = false;
 				$("#gender_msg").html("Select Your Gender");
+				
 			}
 			else
 			{
@@ -118,7 +162,8 @@ else
 			}
 
 
-return false;
+
+return check;
 });	
 
 });
